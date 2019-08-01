@@ -1,8 +1,9 @@
 require('dotenv').config()
 const express = require("express");
 const movies = require("./movies-data-small.json");
-const cors = require('cors')
-const helmet = require('helmet')
+const cors = require('cors');
+const helmet = require('helmet');
+const morgan = require('morgan');
 
 const app = express();
 app.use(helmet())
